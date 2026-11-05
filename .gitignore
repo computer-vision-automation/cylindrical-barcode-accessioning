@@ -1,0 +1,15 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Large Test Datasets / High-Res Images
+*.jpg
+*.png
+*.csv
+*.json
+
+# IDE settings
+.vscode/
+.idea/
