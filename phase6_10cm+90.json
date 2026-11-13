@@ -1,0 +1,81 @@
+{
+  "phase": 6,
+  "version": "2.0",
+  "description": "Phase 5 mirror-plane barcode boundaries mapped to exact angular crossings, tolerance ranges, and continuity-checked candidate intervals.",
+  "input_detection_file": ".\\phase5_10cm+90\\10cm+90_detections.json",
+  "geometry": {
+    "mirror_angle_deg": 99.0,
+    "camera_position_mm": [
+      0.0,
+      240.0
+    ],
+    "camera_distance_from_hinge_mm": 240.0,
+    "tube_centre_distance_from_hinge_mm": 70.0,
+    "tube_diameter_mm": 13.0,
+    "tube_radius_mm": 6.5,
+    "mirror_gap_mm": 9.5,
+    "mirror_width_mm": 100.0,
+    "flask_x_mm": 0.0,
+    "solver_tolerance_mm": 1.5,
+    "angular_scan_step_deg": 0.1
+  },
+  "coordinate_notes": {
+    "mirror_measurements": "Distances from the hinge-side glass edge on the rectified mirror plane.",
+    "exact_crossings": "Linearly interpolated angles where the model prediction equals the measured mirror distance.",
+    "tolerance_ranges": "Angles whose valid model predictions are within the configured tolerance; these are uncertainty bands, not exact solutions.",
+    "paired_interval": "Selected only if exactly one pair of exact crossings passes visibility, glass-boundary, measured-range, and monotonicity checks.",
+    "vertical_coordinates": "Original Phase 5 vertical measurements are preserved but are not converted to tube axial coordinates by this top-down 2D model.",
+    "orientation": "Barcode orientation is preserved as supplied by Phase 5. No crop rotation or coordinate transposition is performed.",
+    "validation": "All angular results remain model estimates and require physical validation against measured tube/barcode positions."
+  },
+  "mapped_detections": [
+    {
+      "view": "right",
+      "score": 0.5,
+      "orientation": "horizontal_bars",
+      "mirror_measurements_mm": {
+        "near": 80.3,
+        "far": 91.5,
+        "centre": 85.9
+      },
+      "vertical_range_mm_from_top": [
+        91.7,
+        121.3
+      ],
+      "angular_solutions_deg": {
+        "near": [],
+        "far": []
+      },
+      "boundary_analysis": {
+        "near": {
+          "measured_distance_mm": 80.3,
+          "exact_crossings": [],
+          "tolerance_ranges": [],
+          "best_valid_sample": {
+            "angle_deg": 25.9,
+            "predicted_distance_mm": 69.6394,
+            "absolute_error_mm": 10.66056
+          },
+          "tolerance_mm": 1.5
+        },
+        "far": {
+          "measured_distance_mm": 91.5,
+          "exact_crossings": [],
+          "tolerance_ranges": [],
+          "best_valid_sample": {
+            "angle_deg": 25.9,
+            "predicted_distance_mm": 69.6394,
+            "absolute_error_mm": 21.86056
+          },
+          "tolerance_mm": 1.5
+        }
+      },
+      "paired_angular_interval": {
+        "status": "no_exact_crossing_for_one_or_both_boundaries",
+        "selected_interval": null,
+        "tested_pairs": [],
+        "note": "A selected interval is a model-derived candidate, not a physically validated result."
+      }
+    }
+  ]
+}
