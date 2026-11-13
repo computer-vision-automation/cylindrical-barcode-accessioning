@@ -1,0 +1,284 @@
+{
+  "created": "2026-11-08T00:09:45",
+  "source_image": "D:\\tech\\phase4\\samples\\10cm_ran.jpg",
+  "image_size_px": {
+    "width": 3072,
+    "height": 4096
+  },
+  "corner_mode": "edge",
+  "mirror_visible_glass_mm": {
+    "width": 100.0,
+    "height": 150.0
+  },
+  "rectified_size_px": {
+    "width": 1000,
+    "height": 1500
+  },
+  "px_per_mm": 10.0,
+  "geometry_stored_for_phase4_not_yet_used": {
+    "included_angle_deg_nominal": 99.0,
+    "gap_top_mm_measured": 11.0,
+    "gap_bottom_mm_measured": 8.0,
+    "flask_outer_diameter_mm": 13.0,
+    "flask_inner_diameter_mm": 11.0,
+    "cap_diameter_mm": 15.0,
+    "flask_position_cm_label": null
+  },
+  "derived": {
+    "gap_wedge_tilt_deg": 1.1457628381751033,
+    "note": "Gap differs top vs bottom: mirror planes are not exactly vertical/parallel to the hinge."
+  },
+  "validated_against_physical_ruler": false,
+  "notes": [
+    "px_per_mm is output resolution, not accuracy.",
+    "Displacements are apparent mirror-plane positions, not true 3D distances."
+  ],
+  "mirrors": {
+    "left": {
+      "clicked_points_photo_px": [
+        [
+          452,
+          136
+        ],
+        [
+          1170,
+          436
+        ],
+        [
+          1401,
+          858
+        ],
+        [
+          1435,
+          2037
+        ],
+        [
+          393,
+          2598
+        ],
+        [
+          1130,
+          2480
+        ],
+        [
+          39,
+          465
+        ],
+        [
+          59,
+          2096
+        ]
+      ],
+      "corners_photo_px_TL_TR_BR_BL": [
+        [
+          32.8179558442584,
+          -39.14570090072769
+        ],
+        [
+          1391.4992765944219,
+          528.5484442595077
+        ],
+        [
+          1446.3147416474308,
+          2429.355305950615
+        ],
+        [
+          65.79813385342331,
+          2650.38781574667
+        ]
+      ],
+      "homography_photo_to_rectified": [
+        [
+          0.5196363873538326,
+          -0.0063719978334848765,
+          -17.30283991606244
+        ],
+        [
+          -0.23996766517211363,
+          0.5743225891779123,
+          30.357509176941036
+        ],
+        [
+          -0.00021903691193312833,
+          1.49384731402104e-05,
+          1.0
+        ]
+      ],
+      "homography_rectified_to_photo": [
+        [
+          1.9479475310029877,
+          0.020751798562762165,
+          33.07505137852668
+        ],
+        [
+          0.7919780202775952,
+          1.7509947533916093,
+          -39.452370392958116
+        ],
+        [
+          0.00041484146941510227,
+          -2.1611778217944137e-05,
+          1.007834015291415
+        ]
+      ],
+      "reference_point": {
+        "rectified_px": [
+          998,
+          1280
+        ],
+        "mm_from_top_left": [
+          99.8,
+          128.0
+        ],
+        "photo_px": [
+          1437.1781780236302,
+          2146.214354214619
+        ]
+      },
+      "barcode_point": {
+        "rectified_px": [
+          125,
+          1275
+        ],
+        "mm_from_top_left": [
+          12.5,
+          127.5
+        ],
+        "photo_px": [
+          293.592675528337,
+          2220.7027276735266
+        ]
+      },
+      "displacement": {
+        "dx_mm": -87.3,
+        "dy_mm": -0.5,
+        "distance_mm": 87.3014318324734,
+        "meaning": "apparent, mirror-plane coordinates"
+      },
+      "barcode_distance_from_hinge_edge_mm": 87.4
+    },
+    "right": {
+      "clicked_points_photo_px": [
+        [
+          1735,
+          465
+        ],
+        [
+          2521,
+          166
+        ],
+        [
+          2880,
+          603
+        ],
+        [
+          2856,
+          2116
+        ],
+        [
+          1755,
+          2504
+        ],
+        [
+          2399,
+          2573
+        ],
+        [
+          1534,
+          868
+        ],
+        [
+          1543,
+          2052
+        ]
+      ],
+      "corners_photo_px_TL_TR_BR_BL": [
+        [
+          1531.5250253129973,
+          542.403330065412
+        ],
+        [
+          2889.1534412482806,
+          25.951807972982348
+        ],
+        [
+          2847.9877462531813,
+          2621.105829955698
+        ],
+        [
+          1546.2658113207547,
+          2481.6356226415096
+        ]
+      ],
+      "homography_photo_to_rectified": [
+        [
+          1.5470344425925886,
+          -0.01175959840999985,
+          -2362.943517237884
+        ],
+        [
+          0.4452609430612724,
+          1.1704852049073025,
+          -1316.8033382109215
+        ],
+        [
+          0.0003839409836706856,
+          -3.0245439414018463e-05,
+          1.0
+        ]
+      ],
+      "homography_rectified_to_photo": [
+        [
+          0.3961562651565196,
+          0.02916110987189965,
+          974.4943253900229
+        ],
+        [
+          -0.33315074466977657,
+          0.8599175465149148,
+          345.12590345656315
+        ],
+        [
+          -0.00016217691679514394,
+          1.4812438845022167e-05,
+          0.6362901747314572
+        ]
+      ],
+      "reference_point": {
+        "rectified_px": [
+          8,
+          1235
+        ],
+        "mm_from_top_left": [
+          0.8,
+          123.5
+        ],
+        "photo_px": [
+          1551.6593924821395,
+          2149.837294106824
+        ]
+      },
+      "barcode_point": {
+        "rectified_px": [
+          858,
+          1252
+        ],
+        "mm_from_top_left": [
+          85.8,
+          125.2
+        ],
+        "photo_px": [
+          2619.6213213615097,
+          2202.68906033428
+        ]
+      },
+      "displacement": {
+        "dx_mm": 85.0,
+        "dy_mm": 1.7,
+        "distance_mm": 85.01699830033992,
+        "meaning": "apparent, mirror-plane coordinates"
+      },
+      "barcode_distance_from_hinge_edge_mm": 85.8
+    }
+  }
+}
